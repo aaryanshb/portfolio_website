@@ -113,23 +113,40 @@ h3 {
 .btn {
     display: inline-flex;
     align-items: center;
-    /* vertical centering */
     justify-content: center;
-    gap: 0.75rem;
-    /* space between icon & text */
-    background: black;
-    color: whitesmoke;
+
+    border: 2px solid black;
+    background: whitesmoke;
+    color: black;
     padding: 0.75rem 1.5rem;
     border-radius: 20px;
     width: 120px;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
     cursor: pointer;
+
+
+    transition:
+        background-color 200ms ease,
+        color 200ms ease,
+        transform 150ms ease,
+        box-shadow 150ms ease;
 }
 
+.btn:hover {
+    transform: translateY(-1px);
+    background: black;
+    color: whitesmoke;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.50);
+}
 
-
+.btn:active {
+    transform: translateY(0);
+    background: black;
+    color: whitesmoke;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+}
 
 /* right column */
 
