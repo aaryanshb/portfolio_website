@@ -71,7 +71,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: clamp(1.5rem, 5vw, 7rem);
 
     outline: 2px solid green;
 
