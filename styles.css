@@ -39,3 +39,11 @@ h3 {
     line-height: 1.2;
     font-weight: 600;
 }
+
+.hero-image {
+    display: flex;
+}
+
+.hero-text {
+    display: flex;
+}
