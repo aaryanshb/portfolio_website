@@ -1,3 +1,18 @@
+/* Fonts */
+@font-face {
+    font-family: "Radley";
+    src: url("fonts/Radley-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Radley";
+    src: url("fonts/Radley-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
 /* 1. Reset / base */
 *,
 *::before,
@@ -38,7 +53,7 @@ h1,
 h2,
 h3 {
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* basic reset */
