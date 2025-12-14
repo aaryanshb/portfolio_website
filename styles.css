@@ -121,6 +121,7 @@ h3 {
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     gap: 1.25rem;
     margin: 0;
@@ -130,6 +131,8 @@ h3 {
 .nav-links a {
     text-decoration: none;
     font-size: 16px;
+    font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
     color: var(--bg);
 
 }
@@ -138,10 +141,28 @@ h3 {
     text-decoration: underline;
 }
 
+/*
 .nav-cta {
     padding: 0.5rem 1rem;
     border: 1px solid var(--bg);
     border-radius: 999px;
+}
+*/
+
+.theme-toggle {
+    width: 30px;
+    height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid var(--text);
+    background: var(--bg);
+    color: var(--text);
+
+    cursor: pointer;
 }
 
 .hero {
