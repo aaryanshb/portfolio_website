@@ -25,7 +25,7 @@
 
 /* 2. Base document styles */
 html {
-    font-size: 16px;
+    font-size: 10px;
 }
 
 body {
@@ -184,3 +184,16 @@ h3 {
 }
 
 /* END OF THUMBNAIL*/
+
+/*Mobile Version*/
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+}
