@@ -34,7 +34,7 @@
 
         </nav>
 
-        <div class="hero">
+        <div id="hero">
 
             <div class="hero-info">
                 <div class="hero-heading">
@@ -91,29 +91,50 @@
         </div>
     </header>
 
-    <script>
+    <section id="projects">
+        <h2 class="projects-heading">Projects</h2>
 
-        // Dark Mode Logic:
-        const root = document.documentElement; // <html>
-        const btn = document.querySelector(".theme-toggle");
+        <div class="projects-grid">
+            <article class="project-card">
+                <h3>Project Title</h3>
 
-        // Load saved theme (if any)
-        const saved = localStorage.getItem("theme");
-        if (saved === "dark") root.setAttribute("data-theme", "dark");
+                <div class="project-media">
+                    <!-- illustration / image -->
+                </div>
 
-        btn.addEventListener("click", () => {
-            const isDark = root.getAttribute("data-theme") === "dark";
+                <p class="project-desc">
+                    Short description of the project.
+                </p>
 
-            if (isDark) {
-                root.removeAttribute("data-theme");
-                localStorage.setItem("theme", "light");
-            } else {
-                root.setAttribute("data-theme", "dark");
-                localStorage.setItem("theme", "dark");
-            }
-        });
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Additional link</a>
+                </div>
+            </article>
 
-    </script>
+            <script>
+
+                // Dark Mode Logic:
+                const root = document.documentElement; // <html>
+                const btn = document.querySelector(".theme-toggle");
+
+                // Load saved theme (if any)
+                const saved = localStorage.getItem("theme");
+                if (saved === "dark") root.setAttribute("data-theme", "dark");
+
+                btn.addEventListener("click", () => {
+                    const isDark = root.getAttribute("data-theme") === "dark";
+
+                    if (isDark) {
+                        root.removeAttribute("data-theme");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        root.setAttribute("data-theme", "dark");
+                        localStorage.setItem("theme", "dark");
+                    }
+                });
+
+            </script>
 
 </body>
 

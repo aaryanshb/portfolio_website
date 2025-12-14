@@ -168,15 +168,13 @@ h3 {
     cursor: pointer;
 }
 
-.hero {
+#hero {
     min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: clamp(1.5rem, 5vw, 7rem);
-
-    outline: 2px solid var(--text);
 
 }
 
@@ -228,7 +226,7 @@ h3 {
 }
 */
 
-.hero .btn {
+#hero .btn {
 
     border: 2px solid var(--text);
     background: var(--ui-2);
@@ -249,21 +247,21 @@ h3 {
         box-shadow 150ms ease;
 }
 
-.hero .btn:hover {
+#hero .btn:hover {
     transform: translateY(-1px);
     background: var(--text);
     color: var(--bg);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.50);
 }
 
-.hero .btn:active {
+#hero .btn:active {
     transform: translateY(0);
     background: var(--text);
     color: var(--bg);
     box-shadow: 0 2px 8px var(--shadow);
 }
 
-.hero .btn:focus-visible {
+#hero .btn:focus-visible {
     outline: 2px solid black;
     outline-offset: 3px;
 }
@@ -296,3 +294,22 @@ h3 {
    END OF HERO / THUMBNAIL — LOCKED
    Do not modify above unless broken
    ========================================================= */
+
+
+
+#projects>* {
+    gap: clamp(1.5rem, 5vw, 7rem);
+    outline: 2px solid red;
+
+
+
+}
+
+h2 {
+    line-height: 1.05;
+    font-family: "Radley", "Times New Roman", serif;
+    font-weight: 400;
+    white-space: nowrap;
+
+    outline: 2px solid blue;
+}
