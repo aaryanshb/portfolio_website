@@ -33,7 +33,7 @@
     --overlay-2: rgba(182, 236, 247, 0.10);
     --overlay-3: rgba(182, 236, 247, 0.16);
 
-    --shadow: rgba(255, 255, 255, 0.12);
+    --shadow: rgba(255, 255, 255, 0.10);
 }
 
 /* Fonts */
@@ -126,7 +126,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 1.25rem;
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
