@@ -71,6 +71,45 @@ h3 {
 
 }
 
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.brand {
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-cta {
+    padding: 0.5rem 1rem;
+    border: 1px solid #111;
+    border-radius: 999px;
+}
+
 /* left column */
 .hero-info {
     display: flex;
