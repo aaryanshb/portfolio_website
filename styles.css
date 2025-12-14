@@ -7,8 +7,8 @@
     /* base colors */
     --text: #0d3d3b;
     --ui-1: #12A594;
-    --ui-2: #A1DED2;
-    --bg: #F3FBF9;
+    --ui-2: #CCF3EA;
+    --bg: #FAFEFD;
 
     /* depth overlays (derived from --text) */
     --overlay-1: rgba(13, 61, 56, 0.04);
@@ -105,19 +105,23 @@ h3 {
     align-items: center;
     justify-content: space-between;
 
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 3rem;
+    background: var(--text);
 }
 
 .brand {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Radley", "Times New Roman", serif;
     text-decoration: none;
-    color: #111;
+
+    color: var(--bg);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
     gap: 1.25rem;
     margin: 0;
     padding: 0;
@@ -125,7 +129,9 @@ h3 {
 
 .nav-links a {
     text-decoration: none;
-    color: #111;
+    font-size: 16px;
+    color: var(--bg);
+
 }
 
 .nav-links a:hover {
@@ -134,7 +140,7 @@ h3 {
 
 .nav-cta {
     padding: 0.5rem 1rem;
-    border: 1px solid #111;
+    border: 1px solid var(--bg);
     border-radius: 999px;
 }
 
@@ -201,7 +207,7 @@ h3 {
 .btn {
 
     border: 2px solid var(--text);
-    background: var(--bg);
+    background: var(--ui-2);
     color: var(--text);
     padding: 0.75rem 1.5rem;
     border-radius: 20px;
@@ -228,8 +234,8 @@ h3 {
 
 .btn:active {
     transform: translateY(0);
-    background: black;
-    color: whitesmoke;
+    background: var(--text);
+    color: var(--bg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
 }
 
@@ -244,7 +250,7 @@ h3 {
     max-width: 500px;
     height: auto;
     display: flex;
-    border: 2px solid black;
+    border: 2px solid var(--text);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     overflow: hidden;
