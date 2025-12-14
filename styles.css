@@ -1,4 +1,4 @@
-/* Fonts */
+/* Load Fonts */
 @font-face {
     font-family: "Radley";
     src: url("fonts/Radley-Regular.ttf") format("truetype");
@@ -13,6 +13,7 @@
     font-style: italic;
 }
 
+/* 1-5 BOILERPLATE CODE */
 /* 1. Reset / base */
 *,
 *::before,
@@ -24,7 +25,7 @@
 
 /* 2. Base document styles */
 html {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 body {
@@ -56,14 +57,7 @@ h3 {
     font-weight: 400;
 }
 
-/* basic reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* END OF BOILERPLATE */
 
 .hero {
     min-height: 100vh;
@@ -84,6 +78,7 @@ h3 {
     font-size: clamp(1rem, 2.5vw, 24px);
     max-width: 36ch;
     gap: clamp(1.5rem, 7vw, 7rem);
+
     /*outline: 2px solid red;*/
 }
 
@@ -171,7 +166,7 @@ h3 {
     height: auto;
     display: flex;
     border: 2px solid black;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     overflow: hidden;
 
@@ -188,7 +183,4 @@ h3 {
     object-fit: cover;
 }
 
-.hero-image:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.75);
-}
+/* END OF THUMBNAIL*/
