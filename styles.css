@@ -532,7 +532,7 @@ h2 {
 
     .hero-image {
         width: 100%;
-        max-width: 420px;
+        max-width: 400px;
         margin: 0 auto;
         border-radius: 16px;
     }
@@ -571,7 +571,7 @@ h2 {
 }
 
 /* Tablets / small laptops */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .hero {
         flex-direction: column;
         padding: 3rem 2rem;
@@ -579,15 +579,32 @@ h2 {
 
     .hero-info {
         max-width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .hero-heading h1 {
         white-space: normal;
     }
 
+    .hero-about {
+        flex-wrap: wrap;
+    }
+
     .hero-actions {
         gap: 1rem;
         flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hero-image {
+        flex: 0 1 400px;
+        /* grow=0, shrink=1, basis=320px */
+        max-width: 500px;
+        width: 100%;
+
+        margin: 0 auto;
+        border-radius: 16px;
     }
 
     .projects-grid {
