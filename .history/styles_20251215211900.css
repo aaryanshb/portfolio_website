@@ -383,24 +383,9 @@ h2 {
 }
 
 .footer-socials {
-
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-
     color: var(--bg);
 }
 
-.footer-copyright {
-
-    font-weight: 400;
-    font-size: 20px;
-    font-family: "Radley", "Times New Roman", serif;
-    text-decoration: none;
-
+.footer-copy {
     color: var(--bg);
 }
