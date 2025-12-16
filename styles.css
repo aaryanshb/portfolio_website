@@ -192,6 +192,7 @@ h3 {
     gap: clamp(1.5rem, 7vw, 7rem);
 
     /*outline: 2px solid red;*/
+    margin-left: 2rem;
 }
 
 .hero-heading h1 {
@@ -281,6 +282,8 @@ h3 {
     box-shadow: 0 6px 20px var(--shadow);
     border-radius: 20px;
     overflow: hidden;
+
+    margin-right: 2rem;
 
     transition:
         background-color 200ms ease,
@@ -616,6 +619,8 @@ h2 {
         justify-content: center;
         width: 100%;
 
+        margin: auto;
+
         border-radius: 16px;
     }
 
@@ -626,5 +631,7 @@ h2 {
     .project-card {
         width: min(420px, 100%);
         aspect-ratio: auto;
+
+        border-radius: 16px;
     }
 }
