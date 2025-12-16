@@ -386,12 +386,18 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.icon {
+    width: 1.25em;
+    /* relative to text size */
+    height: 1.25em;
+}
+
 /* FIX: align icon + text inside project buttons */
 .project-card .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.50rem;
+    gap: 1rem;
 
     color: var(--text);
     text-decoration: none;
@@ -400,6 +406,7 @@ h2 {
 
     border: 2px solid var(--text);
     border-radius: 20px;
+    margin-right: 2rem;
 
     width: clamp(10rem, 12vw, 12rem);
     font-size: 16px;
