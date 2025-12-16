@@ -23,7 +23,7 @@
 /* Dark mode (toggle) */
 [data-theme="dark"] {
     /* base colors */
-    --text: #d9fae9;
+    --text: #d5faef;
     --ui-1: #0BD8B6;
     --ui-2: #145750;
     --bg: #111C1B;
@@ -95,6 +95,10 @@ h2,
 h3 {
     line-height: 1.2;
     font-weight: 400;
+}
+
+.hidden {
+    display: none;
 }
 
 /* =========================================================
@@ -187,8 +191,6 @@ h3 {
     max-width: 36ch;
     gap: clamp(1.5rem, 7vw, 7rem);
 
-    margin-left: 2rem;
-
     /*outline: 2px solid red;*/
 }
 
@@ -238,7 +240,7 @@ h3 {
     border-radius: 20px;
     width: clamp(8rem, 12vw, 12rem);
     min-height: auto;
-    font-size: clamp(0.875rem, 1.25vw, 1.5rem);
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
@@ -279,8 +281,6 @@ h3 {
     box-shadow: 0 6px 20px var(--shadow);
     border-radius: 20px;
     overflow: hidden;
-
-    margin-right: 2rem;
 
     transition:
         background-color 200ms ease,
@@ -591,8 +591,9 @@ h2 {
 
     .hero-info {
         max-width: 100%;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        justify-content: center;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .hero-heading h1 {
@@ -611,10 +612,10 @@ h2 {
 
     .hero-image {
         flex: 0 1 400px;
-        max-width: 500px;
+        max-width: 400px;
+        justify-content: center;
         width: 100%;
 
-        margin: 0 auto;
         border-radius: 16px;
     }
 
@@ -623,7 +624,7 @@ h2 {
     }
 
     .project-card {
-        width: min(520px, 100%);
+        width: min(420px, 100%);
         aspect-ratio: auto;
     }
 }
